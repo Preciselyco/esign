@@ -20,14 +20,14 @@
 // https://developers.docusign.com/esign-rest-api/reference/UserGroups
 // Usage example:
 //
-//   import (
-//       "github.com/jfcote87/esign"
-//       "github.com/jfcote87/esign/v2.1/usergroups"
-//       "github.com/jfcote87/esign/v2.1/model"
-//   )
-//   ...
-//   usergroupsService := usergroups.New(esignCredential)
-package usergroups // import "github.com/jfcote87/esign/v2.1/usergroups"
+//	import (
+//	    "github.com/Preciselyco/esign"
+//	    "github.com/Preciselyco/esign/v2.1/usergroups"
+//	    "github.com/Preciselyco/esign/v2.1/model"
+//	)
+//	...
+//	usergroupsService := usergroups.New(esignCredential)
+package usergroups // import "github.com/Preciselyco/esign/v2.1/usergroups"
 
 import (
 	"context"
@@ -35,8 +35,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/jfcote87/esign"
-	"github.com/jfcote87/esign/v2.1/model"
+	"github.com/Preciselyco/esign"
+	"github.com/Preciselyco/esign/v2.1/model"
 )
 
 // Service implements DocuSign UserGroups Category API operations
@@ -75,7 +75,6 @@ func (op *GroupBrandsDeleteOp) Do(ctx context.Context) (*model.BrandsResponse, e
 }
 
 // GroupBrandsGet gets group brand ID Information.
-//
 //
 // https://developers.docusign.com/esign-rest-api/reference/usergroups/groupbrands/get
 //

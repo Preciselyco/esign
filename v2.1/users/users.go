@@ -21,14 +21,14 @@
 // https://developers.docusign.com/esign-rest-api/reference/Users
 // Usage example:
 //
-//   import (
-//       "github.com/jfcote87/esign"
-//       "github.com/jfcote87/esign/v2.1/users"
-//       "github.com/jfcote87/esign/v2.1/model"
-//   )
-//   ...
-//   usersService := users.New(esignCredential)
-package users // import "github.com/jfcote87/esign/v2.1/users"
+//	import (
+//	    "github.com/Preciselyco/esign"
+//	    "github.com/Preciselyco/esign/v2.1/users"
+//	    "github.com/Preciselyco/esign/v2.1/model"
+//	)
+//	...
+//	usersService := users.New(esignCredential)
+package users // import "github.com/Preciselyco/esign/v2.1/users"
 
 import (
 	"context"
@@ -37,8 +37,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/jfcote87/esign"
-	"github.com/jfcote87/esign/v2.1/model"
+	"github.com/Preciselyco/esign"
+	"github.com/Preciselyco/esign/v2.1/model"
 )
 
 // Service implements DocuSign Users Category API operations
