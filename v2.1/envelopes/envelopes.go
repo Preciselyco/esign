@@ -18,14 +18,14 @@
 // https://developers.docusign.com/esign-rest-api/reference/Envelopes
 // Usage example:
 //
-//   import (
-//       "github.com/jfcote87/esign"
-//       "github.com/jfcote87/esign/v2.1/envelopes"
-//       "github.com/jfcote87/esign/v2.1/model"
-//   )
-//   ...
-//   envelopesService := envelopes.New(esignCredential)
-package envelopes // import "github.com/jfcote87/esign/v2.1/envelopes"
+//	import (
+//	    "github.com/Preciselyco/esign"
+//	    "github.com/Preciselyco/esign/v2.1/envelopes"
+//	    "github.com/Preciselyco/esign/v2.1/model"
+//	)
+//	...
+//	envelopesService := envelopes.New(esignCredential)
+package envelopes // import "github.com/Preciselyco/esign/v2.1/envelopes"
 
 import (
 	"context"
@@ -35,8 +35,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jfcote87/esign"
-	"github.com/jfcote87/esign/v2.1/model"
+	"github.com/Preciselyco/esign"
+	"github.com/Preciselyco/esign/v2.1/model"
 )
 
 // Service implements DocuSign Envelopes Category API operations
@@ -1257,8 +1257,6 @@ func (op *RecipientTabsListOp) IncludeMetadata(val string) *RecipientTabsListOp 
 
 // RecipientTabsUpdate updates the tabs for a recipient.
 //
-//
-//
 // https://developers.docusign.com/esign-rest-api/reference/envelopes/enveloperecipienttabs/update
 //
 // SDK Method Envelopes::updateTabs
@@ -2236,7 +2234,6 @@ func (op *ListStatusOp) FromDate(val time.Time) *ListStatusOp {
 
 // FromToStatus is the envelope status that you are checking for. Possible values are:
 //
-//
 // - `Changed` (default)
 // - `Completed`
 // - `Created`
@@ -2489,7 +2486,6 @@ func (op *ListStatusChangesOp) FromDate(val time.Time) *ListStatusChangesOp {
 }
 
 // FromToStatus is the envelope status that you are checking for. Possible values are:
-//
 //
 // - `Changed` (default)
 // - `Completed`

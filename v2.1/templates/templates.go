@@ -22,14 +22,14 @@
 // https://developers.docusign.com/esign-rest-api/reference/Templates
 // Usage example:
 //
-//   import (
-//       "github.com/jfcote87/esign"
-//       "github.com/jfcote87/esign/v2.1/templates"
-//       "github.com/jfcote87/esign/v2.1/model"
-//   )
-//   ...
-//   templatesService := templates.New(esignCredential)
-package templates // import "github.com/jfcote87/esign/v2.1/templates"
+//	import (
+//	    "github.com/Preciselyco/esign"
+//	    "github.com/Preciselyco/esign/v2.1/templates"
+//	    "github.com/Preciselyco/esign/v2.1/model"
+//	)
+//	...
+//	templatesService := templates.New(esignCredential)
+package templates // import "github.com/Preciselyco/esign/v2.1/templates"
 
 import (
 	"context"
@@ -38,8 +38,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jfcote87/esign"
-	"github.com/jfcote87/esign/v2.1/model"
+	"github.com/Preciselyco/esign"
+	"github.com/Preciselyco/esign/v2.1/model"
 )
 
 // Service implements DocuSign Templates Category API operations
@@ -1290,10 +1290,10 @@ func (op *ListOp) FolderIds(val ...string) *ListOp {
 
 // FolderTypes is the type of folder to return templates for. Possible values are:
 //
-// - `templates`: Templates in the **My Templates** folder.
-//   Templates in the **Shared Templates**  and **All Template** folders (if the request id from and Admin) are excluded.
-// - `templates_root`: Templates in the root level of the **My Templates** folder, but not in an actual folder. Note that the **My Templates** folder is not a real folder.
-// - `recylebin`: Templates that have been deleted.
+//   - `templates`: Templates in the **My Templates** folder.
+//     Templates in the **Shared Templates**  and **All Template** folders (if the request id from and Admin) are excluded.
+//   - `templates_root`: Templates in the root level of the **My Templates** folder, but not in an actual folder. Note that the **My Templates** folder is not a real folder.
+//   - `recylebin`: Templates that have been deleted.
 func (op *ListOp) FolderTypes(val string) *ListOp {
 	if op != nil {
 		op.QueryOpts.Set("folder_types", val)
@@ -1388,7 +1388,6 @@ func (op *ListOp) OrderBy(val string) *ListOp {
 }
 
 // SearchFields is a comma-separated list of additional template properties to search.
-//
 //
 // - `sender`: Include sender name and email in the search.
 // - `recipients`: Include recipient names and emails in the search.
